@@ -17,8 +17,8 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          GITHUB_TOKEN: ${{ SONAR_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ 493d72918ffe08d58270d7f8da29958fceaba973 }}
 
         #  These commands exist in the original file.
       - name: Install Dependencies
